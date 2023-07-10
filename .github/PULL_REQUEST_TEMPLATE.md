@@ -28,6 +28,26 @@ For new packages please briefly describe the package or provide a link to its ho
   - [ ] (Module addition) Added a release notes entry if adding a new NixOS module
 - [ ] Fits [CONTRIBUTING.md](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md).
 
+###### Getting started with reviewing this package
+
+<!--
+Put in this section any additional comment that might help potential reviewers to review your PR. Describe for
+instance the instructions to check if the bug is indeed fixed etc, which binary should be used to start the program,
+which command can be run to check basic functionalities... Make sure to update instructions in upper case letter
+(you might need to first submit the PR and then edit it to change PUT_HERE_THE_PR_NUMBER_CF_URL).
+-->
+
+To start reviewing this PR, you can first run [nixpkgs-review](https://github.com/Mic92/nixpkgs-review):
+```
+$ # first cd to a clone of nixpkgs, or clone it, e.g. in your $HOME: git clone https://github.com/NixOS/nixpkgs
+$ nix run nixpkgs#nixpkgs-review -- pr PUT_HERE_THE_PR_NUMBER_CF_URL
+```
+
+Then, basic functionalities can be tested using:
+```
+$ ./result/YOUR_PROGRAM/bin/YOUR_BINARY
+```
+
 <!--
 To help with the large amounts of pull requests, we would appreciate your
 reviews of other pull requests, especially simple package updates. Just leave a
